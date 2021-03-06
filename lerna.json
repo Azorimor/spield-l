@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "npmClientArgs" : ["--no-lockfile"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "ignoreChanges": ["*.md"],
+      "npmClient": "yarn",
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "npmClient": "yarn"
+    }
+  }
+}

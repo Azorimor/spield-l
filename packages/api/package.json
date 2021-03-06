@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "API for spielD",
+  "keywords": [
+    "api",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "packages/api",
+    "url": "https://github.com/Azorimor/spield.git"
+  },
+  "author": "Azorimor <azorimor@gmail.com>",
+  "homepage": "https://github.com/Azorimor/spield",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "clean": "rimraf dist",
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn compile",
+    "compile": "tsc && cp \"./package.json\" ./dist/",
+    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
+  }
+}
