@@ -17,10 +17,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
     "prepack": "yarn build",
     "build": "yarn clean && yarn compile",
-    "compile": "tsc && cp \"./package.json\" ./dist/",
+    "compile": "tsc --build && cp \"./package.json\" ./dist/",
     "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
   }
 }

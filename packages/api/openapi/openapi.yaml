@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  version: 0.0.1
+  title: SpielD API Specification
+  description: SpielD API specification.
+  license:
+    name: GPL-3.0-or-later
+  contact:
+    name: Azorimor
+    url: https://github.com/Azorimor/spield
+servers:
+  - url: https://api.spield.org/
+    description: Official API server location.
+paths:
+  /users/{user_id}:
+    get:
+      description: Returns information about a user.
+      responses:
+        '200':
+          description: User information.
+tags:
+  - name: user
+    description: User operations

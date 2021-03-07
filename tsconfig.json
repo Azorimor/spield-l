@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "./packages",
+        "paths": {
+            "@namespace/api/*": [
+                "api/src/*"
+            ]
+        }
+    },
+    "files": [],
+    "references": [
+        {
+            "path": "packages/api"
+        }
+    ]
+}
