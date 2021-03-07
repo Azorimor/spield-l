@@ -16,6 +16,7 @@
   "license": "ISC",
   "main": "dist/index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
     "prepack": "yarn build",
