@@ -22,6 +22,6 @@
     "prepack": "yarn build",
     "build": "yarn clean && yarn compile",
     "compile": "tsc --build && cp \"./package.json\" ./dist/",
-    "lint": "eslint \"./src/**/*.{ts,tsx}\" --max-warnings=0"
+    "lint": "eslint \"./{src,tests}/**/*.{ts,tsx}\" --max-warnings=0"
   }
 }
